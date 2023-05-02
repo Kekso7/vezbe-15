@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.produktHolder {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.produkt img {
+	width: 100%;
+	border-radius: 15px;
+}
+
+.produkt {
+	width: 20%;
+	margin-top: 10px;
+}
+
+.seeButton {
+	display: block;
+	text-decoration: none;
+	background-color: rgb(127, 127, 246);
+	color: black;
+	padding: 10px;
+	text-align: center;
+	width: 150px;
+	transition: 2s ease;
+}
+
+.seeButton:hover {
+	background-color: blue;
+	color: antiquewhite;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1023px) {
+	.produkt {
+		width: 30%;
+	}
+
+	.seeButton {
+		width: 100%;
+		padding: 10px 0;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.produkt {
+		width: 80%;
+	}
+
+	.seeButton {
+		width: 100%;
+		padding: 10px 0;
+	}
+}
